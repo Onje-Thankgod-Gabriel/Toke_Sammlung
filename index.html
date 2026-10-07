@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toke's Sammlung | Where Elegance Meets Confidence</title>
+    <meta name="description" content="Toke's Sammlung — a curated collection of luxury products where elegance meets confidence. Discover refined craftsmanship and timeless design." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header class="site-header" role="banner" aria-label="Main navigation">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <a href="index.html" aria-label="Toke's Sammlung home">
+                    <!-- Logo Image – square, larger -->
+                    <img src="assets/images/TokeSammlungLogoSymbol.png" alt="Toke's Sammlung monogram logo"  class="nav-logo-image"/>
+                    <span class="brand-logo-text">Toke's <span class="gold">Sammlung</span></span>
+                    <span class="brand-logo-monogram" aria-hidden="true">TS</span>
+                </a>
+            </div>
+
+            <nav class="nav-primary" aria-label="Primary navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <li><a href="products.html" class="nav-link">Collection</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="favourites.html" class="nav-link">Favourites</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle" role="switch" aria-checked="false">
+                    <span class="theme-icon" aria-hidden="true">☀</span>
+                </button>
+                <a href="https://wa.me/+2348053004410" target="_blank" rel="noopener" class="nav-whatsapp" aria-label="Chat on WhatsApp">
+                    <span class="whatsapp-icon" aria-hidden="true">⌨</span>
+                    <span class="whatsapp-label">WhatsApp</span>
+                </a>
+                <a href="login.html"  class="nav-whatsapp  nav-whatsapp-static" aria-label="Chat on WhatsApp">
+                    <span class="whatsapp-label whatsapp-label-2">Sign In</span>
+                </a>
+                
+                <!-- Burger menu – three perfect lines -->
+                <button class="nav-toggle" aria-label="Open menu" id="navToggle" aria-expanded="false">
+                    <span class="hamburger" aria-hidden="true">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+        <div class="mobile-menu-inner">
+            <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+            <nav aria-label="Mobile navigation">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link active" aria-current="page">Home</a></li>
+                    <li><a href="products.html" class="mobile-nav-link">Collection</a></li>
+                    <li><a href="about.html" class="mobile-nav-link">About</a></li>
+                    <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                    <li><a href="favourites.html" class="mobile-nav-link">Favourites</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-actions">
+                <a href="login.html" target="_blank"  class="mobile-whatsapp">
+                    Sign In
+                </a>
+            </div>
+            <div class="mobile-brand">Toke's Sammlung</div>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- ===== HERO ===== -->
+        <section class="hero" aria-label="Brand hero">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-eyebrow anim-hero-eyebrow">
+                        <span class="gold-line" aria-hidden="true"></span>
+                        <span class="hero-eyebrow-text">Toke's Sammlung</span>
+                    </div>
+                    <h1 class="hero-title anim-hero-title">
+                        Where <span class="gold">Elegance</span><br />
+                        Meets Confidence
+                    </h1>
+                    <p class="hero-description anim-hero-description">
+                        A curated collection of luxury products, crafted for those who
+                        appreciate refinement, quality, and timeless design.
+                    </p>
+                    <div class="hero-actions anim-hero-actions">
+                        <a href="products.html" class="btn btn-primary">Explore Collection</a>
+                        <a href="https://wa.me/+2348053004410" target="_blank" rel="noopener" class="btn btn-secondary">Chat on WhatsApp</a>
+                    </div>
+                    <div class="hero-monogram" aria-hidden="true"><img src="assets/images/TokeSammlungLogoSymbol.png" alt="Toke's Sammlung Logo" class="anim-reveal-image"></div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image anim-hero-image">
+                        <img
+                        src="assets/images/hero/home-hero.png"
+                        alt="Toke's Sammlung luxury product collection — refined elegance and craftsmanship"
+                        class="anim-reveal-image"
+                        loading="eager"
+                        />
+                        <div class="hero-image-accent" aria-hidden="true"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BRAND INTRODUCTION ===== -->
+        <section class="brand-intro" aria-label="Brand introduction">
+            <div class="container">
+                <div class="brand-intro-grid anim-fade-up">
+                    <div class="brand-intro-content">
+                        <span class="section-eyebrow anim-fade-up">About the Collection</span>
+                        <h2 class="section-title anim-fade-up">
+                            Elegance, <span class="gold">Curated</span> With Intention.
+                        </h2>
+                        <div class="brand-divider" aria-hidden="true">
+                            <span class="divider-line"></span>
+                            <span class="divider-diamond">✪</span>
+                            <span class="divider-line"></span>
+                        </div>
+                        <p class="brand-intro-text anim-fade-up">
+                            Toke's Sammlung is more than a brand — it's a philosophy.
+                            Every piece in our collection is selected for its ability to
+                            embody confidence, quality, and individuality. We believe that
+                            true elegance lies in the details, and we curate with
+                            intention, not trend.
+                        </p>
+                        <p class="brand-intro-text  anim-fade-up">
+                            From signature fragrances to refined accessories, each product
+                            tells a story of craftsmanship and timeless beauty.
+                        </p>
+                    </div>
+                    <div class="brand-intro-image">
+                        <img
+                        src="assets/images/brand/home-brand-intro.png"
+                        alt="Luxury product details — craftsmanship and refined materials"
+                        loading="lazy"
+                        class="anim-reveal-image"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- ===== FEATURED COLLECTION ===== -->
+        <section class="featured-collection" aria-label="Featured collection">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow  anim-fade-up">Curated Selection</span>
+                    <h2 class="section-title anim-fade-up">Featured <span class="gold">Collection</span></h2>
+                    <p class="section-subtitle anim-fade-up">
+                         A handpicked edit of our most refined pieces, each chosen for its
+                quality and character.
+                    </p>
+                </div>
+
+                <!-- ===== VIEW TOGGLE (same as products page) ===== -->
+               <!-- ===== VIEW TOGGLE (count left, toggle right) ===== -->
+                <div class="featured-controls">
+                    <span class="result-count" id="featuredResultCount">8 pieces</span>
+                    <div class="view-toggle" role="group" aria-label="View toggle">
+                        <button class="view-btn active" data-view="grid" aria-label="Grid view">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                        </button>
+                        <button class="view-btn" data-view="list" aria-label="List view">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-grid featured-grid anim-stagger" id="featuredGrid">
+                    <!-- Product 1 -->
+                    <div class="product-card" data-id="1">
+                        <div class="product-card-image">
+                            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600&h=480&fit=crop&crop=center" alt="Signature Essence — Fragrance"  loading="lazy" />
+                            <button class="product-card-fav" data-id="1" aria-label="Add to favourites">♡</button>
+                        </div>
+                        <div class="product-card-body">
+                            <div class="product-card-category">Fragrance</div>
+                            <h3 class="product-card-title">Signature Essence</h3>
+                            <p class="product-card-desc">A refined expression of confidence and elegance.</p>
+                            <div class="product-card-footer">
+                                <span class="product-card-price">₦85,000</span>
+                                <a href="product-detail.html?id=1" class="btn-view-details">View Details</a>
+                                <a href="https://wa.me/2348053004410?text=Hello%20Toke's%20Sammlung%2C%20I%20am%20interested%20in%20Signature%20Essence%20(%E2%82%A685%2C000).%0A%0APlease%20provide%20more%20details.%0A%0AView%20product%3A%20https%3A%2F%2Fyourwebsite.com%2Fproduct-detail.html%3Fid%3D1" target="_blank" rel="noopener" class="btn-whatsapp">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card" data-id="2">
+                        <div class="product-card-image">
+                            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=600&h=480&fit=crop&crop=center" alt="The Heritage Watch — Accessories" loading="lazy" />
+                            <button class="product-card-fav" data-id="2" aria-label="Add to favourites">♡</button>
+                        </div>
+                        <div class="product-card-body">
+                            <div class="product-card-category">Accessories</div>
+                            <h3 class="product-card-title">The Heritage Watch</h3>
+                            <p class="product-card-desc">Timeless craftsmanship for the discerning.</p>
+                            <div class="product-card-footer">
+                                <span class="product-card-price">₦120,000</span>
+                                <a href="product-detail.html?id=2" class="btn-view-details">View Details</a>
+                                <a href="https://wa.me/2348053004410?text=Hello%20Toke's%20Sammlung%2C%20I%20am%20interested%20in%20Signature%20Essence%20(%E2%82%A685%2C000).%0A%0APlease%20provide%20more%20details.%0A%0AView%20product%3A%20https%3A%2F%2Fyourwebsite.com%2Fproduct-detail.html%3Fid%3D1" target="_blank" rel="noopener" class="btn-whatsapp">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card" data-id="3">
+                        <div class="product-card-image">
+                            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600&h=480&fit=crop&crop=center" alt="Velvet Noir — Fragrance" loading="lazy" />
+                            <button class="product-card-fav" data-id="3" aria-label="Add to favourites">♡</button>
+                        </div>
+                        <div class="product-card-body">
+                            <div class="product-card-category">Fragrance</div>
+                            <h3 class="product-card-title">Velvet Noir</h3>
+                            <p class="product-card-desc">Bold, mysterious, and utterly refined.</p>
+                            <div class="product-card-footer">
+                                <span class="product-card-price">₦95,000</span>
+                                <a href="product-detail.html?id=3" class="btn-view-details">View Details</a>
+                                <a href="https://wa.me/+2348053004410?text=Hello%20Toke's%20Sammlung%2C%20I%20am%20interested%20in%20Velvet%20Noir.%20Please%20provide%20more%20details." target="_blank" rel="noopener" class="btn-whatsapp">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-card" data-id="4">
+                        <div class="product-card-image">
+                            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=600&h=480&fit=crop&crop=center" alt="The Artisan Cuff — Accessories" loading="lazy" />
+                            <button class="product-card-fav" data-id="4" aria-label="Add to favourites">♡</button>
+                        </div>
+                        <div class="product-card-body">
+                            <div class="product-card-category">Accessories</div>
+                            <h3 class="product-card-title">The Artisan Cuff</h3>
+                            <p class="product-card-desc">Minimalist luxury for the modern individual.</p>
+                            <div class="product-card-footer">
+                                <span class="product-card-price">₦65,000</span>
+                                <a href="product-detail.html?id=4" class="btn-view-details">View Details</a>
+                                <a href="https://wa.me/+2348053004410?text=Hello%20Toke's%20Sammlung%2C%20I%20am%20interested%20in%20The%20Artisan%20Cuff.%20Please%20provide%20more%20details." target="_blank" rel="noopener" class="btn-whatsapp">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="product-card" data-id="5">
+                        <div class="product-card-image">
+                            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600&h=480&fit=crop&crop=center" alt="Golden Aura — Fragrance" loading="lazy" />
+                            <button class="product-card-fav" data-id="5" aria-label="Add to favourites">♡</button>
+                        </div>
+                        <div class="product-card-body">
+                            <div class="product-card-category">Fragrance</div>
+                            <h3 class="product-card-title">Golden Aura</h3>
+                            <p class="product-card-desc">Warm, radiant, and unforgettable.</p>
+                            <div class="product-card-footer">
+                                <span class="product-card-price">₦110,000</span>
+                                <a href="product-detail.html?id=5" class="btn-view-details">View Details</a>
+                                <a href="https://wa.me/+2348053004410?text=Hello%20Toke's%20Sammlung%2C%20I%20am%20interested%20in%20Golden%20Aura.%20Please%20provide%20more%20details." target="_blank" rel="noopener" class="btn-whatsapp">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="product-card" data-id="6">
+                        <div class="product-card-image">
+                            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=600&h=480&fit=crop&crop=center" alt="The Classic Pen — Accessories" loading="lazy" />
+                            <button class="product-card-fav" data-id="6" aria-label="Add to favourites">♡</button>
+                        </div>
+                        <div class="product-card-body">
+                            <div class="product-card-category">Accessories</div>
+                            <h3 class="product-card-title">The Classic Pen</h3>
+                            <p class="product-card-desc">Precision writing, timeless elegance.</p>
+                            <div class="product-card-footer">
+                                <span class="product-card-price">₦45,000</span>
+                                <a href="product-detail.html?id=6" class="btn-view-details">View Details</a>
+                                <a href="https://wa.me/+2348053004410?text=Hello%20Toke's%20Sammlung%2C%20I%20am%20interested%20in%20The%20Classic%20Pen.%20Please%20provide%20more%20details." target="_blank" rel="noopener" class="btn-whatsapp">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 7 -->
+                    <div class="product-card" data-id="7">
+                        <div class="product-card-image">
+                            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600&h=480&fit=crop&crop=center" alt="Midnight Bloom — Fragrance" loading="lazy" />
+                            <button class="product-card-fav" data-id="7" aria-label="Add to favourites">♡</button>
+                        </div>
+                        <div class="product-card-body">
+                            <div class="product-card-category">Fragrance</div>
+                            <h3 class="product-card-title">Midnight Bloom</h3>
+                            <p class="product-card-desc">Enchanting, deep, and sophisticated.</p>
+                            <div class="product-card-footer">
+                                <span class="product-card-price">₦78,000</span>
+                                <a href="product-detail.html?id=7" class="btn-view-details">View Details</a>
+                                <a href="https://wa.me/+2348053004410?text=Hello%20Toke's%20Sammlung%2C%20I%20am%20interested%20in%20Midnight%20Bloom.%20Please%20provide%20more%20details." target="_blank" rel="noopener" class="btn-whatsapp">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 8 -->
+                    <div class="product-card" data-id="8">
+                        <div class="product-card-image">
+                            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=600&h=480&fit=crop&crop=center" alt="The Minimalist Ring — Accessories" loading="lazy" />
+                            <button class="product-card-fav" data-id="8" aria-label="Add to favourites">♡</button>
+                        </div>
+                        <div class="product-card-body">
+                            <div class="product-card-category">Accessories</div>
+                            <h3 class="product-card-title">The Minimalist Ring</h3>
+                            <p class="product-card-desc">Understated elegance for everyday wear.</p>
+                            <div class="product-card-footer">
+                                <span class="product-card-price">₦55,000</span>
+                                <a href="product-detail.html?id=8" class="btn-view-details">View Details</a>
+                                <a href="https://wa.me/+2348053004410?text=Hello%20Toke's%20Sammlung%2C%20I%20am%20interested%20in%20The%20Minimalist%20Ring.%20Please%20provide%20more%20details." target="_blank" rel="noopener" class="btn-whatsapp">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View All Button -->
+                <div class="view-all-wrapper">
+                    <a href="products.html" class="btn btn-primary">View All Collection</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BRAND PHILOSOPHY ===== -->
+        <section class="philosophy" aria-label="Brand philosophy">
+            <div class="container">
+                <div class="philosophy-grid">
+                    <div class="philosophy-image">
+                        <img
+                        src="assets/images/brand/home-philosophy.png"
+                        alt="Toke's Sammlung philosophy — elegance, quality, confidence, individuality"
+                        class="anim-reveal-image"
+                        loading="lazy"
+                        />
+                    </div>
+                    <div class="philosophy-content">
+                        <span class="section-eyebrow  anim-fade-up">Our Philosophy</span>
+                        <h2 class="section-title anim-fade-up">
+                            More Than a <span class="gold">Collection.</span>
+                        </h2>
+                        <div class="brand-divider" aria-hidden="true">
+                            <span class="divider-line"></span>
+                            <span class="divider-diamond">✪</span>
+                            <span class="divider-line"></span>
+                        </div>
+                        <p class="philosophy-text anim-fade-up">
+                            We believe that luxury is not about excess — it's about
+                            intention. Each product in the Toke's Sammlung collection is
+                            chosen for its ability to elevate, to inspire, and to become
+                            a part of your story.
+                        </p>
+                        <ul class="philosophy-values">
+                            <li>
+                                <span class="value-icon" aria-hidden="true">⍟</span>
+                                <span><strong>Elegance</strong> — timeless refinement in every detail</span>
+                            </li>
+                            <li>
+                                <span class="value-icon" aria-hidden="true">⍟</span>
+                                <span><strong>Quality</strong> — craftsmanship that endures</span>
+                            </li>
+                            <li>
+                                <span class="value-icon" aria-hidden="true">⍟</span>
+                                <span><strong>Confidence</strong> — pieces that empower</span>
+                            </li>
+                            <li>
+                                <span class="value-icon" aria-hidden="true">⍟</span>
+                                <span><strong>Individuality</strong> — curated for the discerning</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== COLLECTION DISCOVERY ===== -->
+        <section class="collection-discovery" aria-label="Collection categories">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow  anim-fade-up">Discover</span>
+                    <h2 class="section-title anim-fade-up">Explore the <span class="gold">Collection</span></h2>
+                    <p class="section-subtitle anim-fade-up">
+                        Find your signature piece across our curated categories.
+                    </p>
+                </div>
+                <div class="discovery-grid">
+                    <a href="products.html" class="discovery-card discovery-card-1">
+                        <div class="discovery-card-overlay">
+                            <span class="discovery-label">New Arrivals</span>
+                            <span class="discovery-cta">Explore →</span>
+                        </div>
+                    </a>
+                    <a href="products.html" class="discovery-card discovery-card-2">
+                        <div class="discovery-card-overlay">
+                            <span class="discovery-label">Fragrance</span>
+                            <span class="discovery-cta">Explore →</span>
+                        </div>
+                    </a>
+                    <a href="products.html" class="discovery-card discovery-card-3">
+                        <div class="discovery-card-overlay">
+                            <span class="discovery-label">Signature</span>
+                            <span class="discovery-cta">Explore →</span>
+                        </div>
+                    </a>
+                    <a href="products.html" class="discovery-card discovery-card-4">
+                        <div class="discovery-card-overlay">
+                            <span class="discovery-label">Featured</span>
+                            <span class="discovery-cta">Explore →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== WHATSAPP CTA ===== -->
+        <section class="whatsapp-cta" aria-label="WhatsApp call to action">
+            <div class="container">
+                <div class="cta-box">
+                    <div class="cta-content">
+                        <span class="section-eyebrow  anim-fade-up" style="color: var(--color-gold-light);">Get in Touch</span>
+                        <h2 class="cta-title anim-fade-up">
+                            Found Something You <span class="gold">Love?</span>
+                        </h2>
+                        <p class="cta-text anim-fade-up">
+                            Let's talk. Our team is ready to assist you with any questions,
+                            product inquiries, or personalized recommendations.
+                        </p>
+                        <a href="https://wa.me/+2348053004410" target="_blank" rel="noopener" class="btn btn-primary btn-large">
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+                    <div class="cta-decoration" aria-hidden="true">
+                        <span class="cta-monogram"><img src="assets/images/TokeSammlungLogoSymbol.png" alt="Toke Sammlung Logo" class="anim-reveal-image"> </span>
+                        <span class="cta-gold-line"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- ===== AUTHENTICATION MODAL ===== -->
+        <div class="auth-modal" id="authModal" role="dialog" aria-modal="true" aria-label="Authentication required" style="display:none;">
+            <div class="auth-modal-overlay" id="authModalOverlay"></div>
+            <div class="auth-modal-container">
+                <button class="auth-modal-close" id="authModalClose" aria-label="Close modal">✕</button>
+                <div class="auth-modal-content">
+                    <span class="auth-modal-icon  anim-fade-up" aria-hidden="true">♡</span>
+                    <h2 class="auth-modal-title anim-fade-up">Save Your Favourites</h2>
+                    <p class="auth-modal-text anim-fade-up">
+                        Sign in or create an account to save your favourite pieces and easily find them again.
+                    </p>
+                    <div class="auth-modal-actions">
+                        <a href="login.html" class="btn btn-primary auth-modal-btn">Login</a>
+                        <a href="register.html" class="btn btn-secondary auth-modal-btn">Create Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="footer-logo">Toke's <span class="gold">Sammlung</span></span>
+                    <p class="footer-tagline">Where Elegance Meets Confidence</p>
+                    <p class="footer-description">
+                        A curated collection of luxury products for the discerning.
+                        Refined craftsmanship, timeless design.
+                    </p>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-heading">Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Collection</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Connect</h4>
+                    <ul>
+                        <li><a href="https://wa.me/+2348053004410" target="_blank" rel="noopener">WhatsApp</a></li>
+                        <li><a href="mailto:hello@tokessammlung.com">Email</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Location</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Toke's Sammlung. All rights reserved.</p>
+                <p class="footer-credit">Designed with intention.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== TOAST ===== -->
+    <div class="toast" id="toast" role="alert" aria-live="polite">
+        <span class="toast-icon" aria-hidden="true"></span>
+        <span class="toast-message" id="toastMessage">Message</span>
+    </div>
+
+        <!-- ===== SCROLL TO TOP BUTTON ===== -->
+    <button class="scroll-to-top" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5"/>
+            <path d="M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

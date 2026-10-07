@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account | Toke's Sammlung</title>
+    <meta name="description" content="Create your Toke's Sammlung account to save favourites and experience luxury curated just for you." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body data-page="auth">
+
+    <!-- ===== AUTHENTICATION WRAPPER ===== -->
+    <div class="auth-wrapper">
+
+        <!-- ===== VISUAL PANEL (Left) ===== -->
+        <div class="auth-visual">
+            <div class="auth-visual-content">
+                <div class="auth-visual-brand">
+                    <span class="auth-visual-monogram auth-logo-centered-2"><img src="assets/images/TokeSammlungLogoSymbol.png" alt="Toke Sammlung" class="anim-reveal-image" ></span>
+                    <span class="auth-visual-name auth-logo-text-2">Toke's <span class="gold">Sammlung</span></span>
+                </div>
+                <div class="auth-visual-statement">
+                    <h2 class="auth-visual-title">
+                        Begin Your <span class="gold">Journey</span>
+                    </h2>
+                    <p class="auth-visual-text">
+                        Create an account to save your favourite pieces and experience the curated world of Toke's Sammlung.
+                    </p>
+                </div>
+                <div class="auth-visual-image">
+                    <img src="assets/images/brand/auth-visual-image-register.png" alt="Toke's Sammlung — luxury and elegance" class="anim-reveal-image" loading="lazy" />
+                </div>
+                <div class="auth-visual-footer">
+                    <span class="auth-visual-tagline">© 2026 Toke's Sammlung</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== FORM PANEL (Right) ===== -->
+        <div class="auth-form-panel">
+            <div class="auth-form-container">
+                <!-- Theme toggle -->
+                <button class="auth-card-theme-toggle" aria-label="Toggle dark mode" id="authThemeToggle" role="switch" aria-checked="false">
+                    <span class="theme-icon" aria-hidden="true">☀</span>
+                </button>
+
+                <!-- Logo -->
+                <!-- <a href="index.html" class="auth-logo" aria-label="Toke's Sammlung home">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23D6943C'/%3E%3Ctext x='50' y='68' font-family='Cormorant Garamond, serif' font-size='52' font-weight='700' text-anchor='middle' fill='%23000000'%3ETS%3C/text%3E%3C/svg%3E" alt="Toke's Sammlung" width="48" height="48" />
+                    <span class="auth-logo-text">Toke's <span class="gold">Sammlung</span></span>
+                </a> -->
+
+                <!-- Form Header -->
+                <div class="auth-form-header">
+                    <h1 class="auth-form-title  anim-fade-up">Create Account</h1>
+                    <p class="auth-form-subtitle  anim-fade-up">Join Toke's Sammlung to save favourites and discover <br> timeless elegance.</p>
+                </div>
+
+                <!-- Register Form -->
+                <form class="auth-form" id="registerForm" novalidate>
+                    <div class="auth-form-group">
+                        <label for="registerName">Full Name</label>
+                        <input type="text" id="registerName" name="name" placeholder="Your full name" autocomplete="name" required />
+                    </div>
+
+                    <div class="auth-form-group">
+                        <label for="registerEmail">Email Address</label>
+                        <input type="email" id="registerEmail" name="email" placeholder="hello@tokessammlung.com" autocomplete="email" required />
+                    </div>
+
+                    <div class="auth-form-group">
+                        <label for="registerPassword">Password</label>
+                        <div class="auth-password-wrapper">
+                            <input type="password" id="registerPassword" name="password" placeholder="Create a strong password" autocomplete="new-password" required />
+                            <button type="button" class="auth-password-toggle" aria-label="Show password" data-target="registerPassword">
+                                <span class="auth-eye" aria-hidden="true">◒</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="auth-form-group">
+                        <label for="registerConfirmPassword">Confirm Password</label>
+                        <div class="auth-password-wrapper">
+                            <input type="password" id="registerConfirmPassword" name="confirm_password" placeholder="Confirm your password" autocomplete="new-password" required />
+                            <button type="button" class="auth-password-toggle" aria-label="Show password" data-target="registerConfirmPassword">
+                                <span class="auth-eye" aria-hidden="true">◒</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="auth-form-terms">
+                        <label class="auth-checkbox">
+                            <input type="checkbox" name="terms" required />
+                            <span class="auth-checkbox-label">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary auth-submit">Create Account</button>
+
+                    <p class="auth-switch">
+                        Already have an account? <a href="login.html">Sign in</a>
+                    </p>
+                </form>
+
+                <!-- Back to site -->
+                <a href="index.html" class="auth-back-link">← Back to Toke's Sammlung</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== TOAST ===== -->
+    <div class="toast" id="toast" role="alert" aria-live="polite">
+        <span class="toast-icon" aria-hidden="true"></span>
+        <span class="toast-message" id="toastMessage">Message</span>
+    </div>
+
+     <!-- ===== SCROLL TO TOP BUTTON ===== -->
+    <button class="scroll-to-top" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5"/>
+            <path d="M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
